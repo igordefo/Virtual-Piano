@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #eee;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+}
+
+.black-keys {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.white-keys,
+.black-keys {
+    display: flex;
+}
+
+.white-keys kbd,
+.black-keys kbd {
+    text-transform: uppercase;
+    border: 1px solid #000;
+    transition: .25s all ease-out;
+}
+
+.white-keys kbd {
+    background-color: #fff;
+    padding: 300px 40px 50px 40px;
+}
+
+.black-keys kbd {
+    background-color: #000;
+    color: #fff;
+    padding: 100px 25px;
+}
+
+.black-keys kbd:nth-child(1) {
+    transform: translateX(100%);
+}
+
+.black-keys kbd:nth-child(2) {
+    transform: translateX(150%);
+}
+
+.black-keys kbd:nth-child(3) {
+    transform: translateX(350%);
+}
+
+.black-keys kbd:nth-child(4) {
+    transform: translateX(403%);
+}
+
+.black-keys kbd:nth-child(5) {
+    transform: translateX(455%);
+}
+
+.white-keys kbd,
+.black-keys kbd {
+    display: inline-block;
+    cursor: pointer;
+}
